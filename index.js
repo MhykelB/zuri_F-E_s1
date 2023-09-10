@@ -10,10 +10,7 @@ const weekDays = {
   5: "Friday",
   6: "Saturday",
 };
-document.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
-  weekDay.textContent = weekDays[new Date().getDay()];
-  setInterval(() => {
-    utcTime.textContent = Date.now();
-  }, 1000);
-});
+weekDay.textContent = weekDays[new Date().getDay()];
+setInterval(() => {
+  utcTime.textContent = Date.now();
+}, 1000);
